@@ -31,7 +31,7 @@ const logAction = (name: string, data?: any) => {
 
 const IMAGES = {
   hero: "https://lh3.googleusercontent.com/aida-public/AB6AXuCJMQbpx2TpKoY2u8hgdksNQuK2W17YsiOPqq-5HxvVkza7QthrztpqmMOkc2IeHqF0DKL8IXtCexq54_bxvAZan7jaAH6pNGhhBfs8_XAuA_C3rC_WUX-Q_drrAyD0bA_Gc_ZDQVKpt6PQROkS_CATVAdNFRzhax65N_YdBbCadEfRr8ZwnVr8hU_D0yi-WiSXXhLPLSNmeA34cBRO-LlofpvYP9RrR5PzB10LD0q-4t186ZYk3Wbx5qmA0QvEpA9Uma4Sf8FIMxz3",
-  doctor: "https://lh3.googleusercontent.com/aida-public/AB6AXuDM9GKdjSgISqo3bskRSUac-WOc8siHGFTDsMrmEXQWDmFO1vSCKffSHQO9G4VkABtZFRxckuDg5NLW7WVgLU-T7U4r1HgJAg8WMLRlh_zBnrg-y3Vc45DD3Z2b4ghkjTGDvm533baikSgbbUMLp1qGErIg7eC3fmAxwQA6ujdLTDU0yHZJ2ptq7eMTj5OnLl1UZwqmuxT_ufIRGevdlrpvYKWvXqbPTUTCgD_aiptmaXN1r1u9W9EEzjVQTWgllJryA8qFajWgRjWv",
+  doctor: "https://lh3.googleusercontent.com/d/1jbqPwioR-oQgFm7PU43q4XS3-yVRw2dM",
   laser: "https://lh3.googleusercontent.com/aida-public/AB6AXuCYrOPPt0kagePGnrmkGmpD2CbxRI10z8SulCerAhtA-UX8ucPhF2f4ey2EjxwVkgtErzCt-r0qBBFaKkNBlN4jHIkPB9oD-ziKhLa7wkuRty26tf8GsMMdalvT-ms-a0-W0Np7CcZ_wOcNQ3hb-hTxBXz-AFzaLNXm1hbUqlEpM6iF6GhcS6I_RgzFwLdeweIaxeZQmH7PF01xxig6Ahuo4G3vuOeOps7Ud-_HikUcg-v_Yfh9sCLTC0T0a0oRkO55cat-5LLuW0UO",
   injectables: "https://lh3.googleusercontent.com/aida-public/AB6AXuDvpy15nXo3lpt_BQJgKexav5rQSLo7JoKn6eUbDAbQsjHogWAWz8H1eOz_z_JxscKpQi2Lg8z8XQxg8Z__3bEZELzhWC1jOGt2ZCNFxWHbXL9I-XAC732xSzRYJo5G1XGtB2RM8K3kZtCnJLd6tEhOPN0JxFiHQY1jsNecjuMNrTPzVP_b2_hHF9b7FxT425hSoLV6Zp_SgH1nzGojFLVytcFiFLGflphDzixqN73eJ9WtwPFmyoaIAIPykyLfcPlEihWG0XXhut5d",
   rejuvenation: "https://lh3.googleusercontent.com/aida-public/AB6AXuBHlc2jRYIb9yXfRF-xxanQej8k9o203b6N0AN7Tq1miSNFgCxC37giWr2c_gTE9iX2PwDq4I5UkGRiKlQMljPTNc6_4P3RS7PleNl5qFqAr7_OLIhUhuVkmiijb8a6ospBlPnlDeOmYHVI85uiYevnPVWwRiNqZfr9SRUl7lepuGJGxUoMoK8HIkpwCqbUt43_vaselXrAzXmO9dM2L0FIzJo_J9r4GprddoDCR0yeatecq6q_w8P6vdFOsPklV2wRCsUvz0qW1jE4",
@@ -40,11 +40,47 @@ const IMAGES = {
 
 const CONTACT_INFO = {
   phone: "+91 77319 94359",
-  whatsappUrl: "https://wa.me/917731994359?text=Hi%21%20I%20would%20like%20to%20book%20an%20appointment.",
-  address: "1st Floor, Khushi junction, 100 Feet Rd, Midhilapuri Vuda Colony, Madhurawada, Visakhapatnam, AP 530041",
+  whatsappUrl: "https://wa.me/917731994359",
+  address: "1st Floor, Khushi junction, 100 Feet Rd, Midhilapuri Vuda Colony, Madhurawada, Madhuravada, Andhra Pradesh 530041",
   email: "contact@suhasinimd.com",
-  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Khushi+junction+Madhurawada"
+  googleMapsUrl: "https://maps.app.goo.gl/xT5GUX92HSrymZPL7"
 };
+
+const TREATMENTS = [
+  {
+    title: "Laser Treatments",
+    desc: "Advanced precision lasers for pigment correction, permanent hair removal, and non-surgical skin resurfacing.",
+    img: IMAGES.laser,
+    story: "Every laser journey begins with a deep diagnostic scan of your pigmented layers. We use specific wavelengths adjusted specifically to your melanin profile to ensure maximum results with zero thermal damage. The process is a rhythmic pulse of light that gently clears cellular debris, leaving behind nothing but clarity.",
+    process: [
+      { step: "Clinical Mapping", detail: "Identifying depth and density of pigment using high-resolution diagnostics." },
+      { step: "Precision Pulse", detail: "FDA-cleared light energy targets cellular debris while sparing healthy tissue." },
+      { step: "Collagen Ignite", detail: "The thermal energy triggers a natural remodeling of your skin's core structure." }
+    ]
+  },
+  {
+    title: "Injectables & Fillers",
+    desc: "Artistic enhancement and volume restoration using premium, FDA-approved dermal fillers and neuromodulators.",
+    img: IMAGES.injectables,
+    story: "We treat the face as a living sculpture. Before any treatment, Dr. Suhasini maps the dynamic muscle movements of your face to ensure that every drop of filler supports your natural expressions rather than masking them. It's about restoring the shadows of youth, not creating a 'new' face.",
+    process: [
+      { step: "Expression Analysis", detail: "Mapping how your face moves to ensure results look natural in motion." },
+      { step: "Micro-Cannula Technique", detail: "Using fine tools to minimize bruising and ensure smooth product integration." },
+      { step: "Artistic Refinement", detail: "Subtle touch-ups to achieve perfect facial symmetry and balance." }
+    ]
+  },
+  {
+    title: "Skin Rejuvenation",
+    desc: "Customized chemical peels, medical-grade facials, and hydration therapies to restore your skin's natural radiance.",
+    img: IMAGES.rejuvenation,
+    story: "Your skin breathes and sheds, but environmental toxins often stifle this natural cycle. Our rejuvenation protocols are designed to 'reset' the cellular clock. We use medical-grade catalysts that gently detach dead cell layers, allowing the freshest, most vibrant cells to surface and reflect light correctly.",
+    process: [
+      { step: "Barrier Assessment", detail: "Evaluating your skin's pH and hydration levels for a custom formula." },
+      { step: "Catalytic Exfoliation", detail: "Lifting away dull layers to reveal the radiant skin beneath." },
+      { step: "Nutrient Infusion", detail: "Using pressure-delivery systems to feed skin cells at a structural level." }
+    ]
+  }
+];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -249,6 +285,8 @@ const Testimonials = () => {
 };
 
 export default function App() {
+  const [selectedService, setSelectedService] = React.useState<any>(null);
+
   return (
     <div className="min-h-screen selection:bg-brand-secondary/20 selection:text-brand-secondary bg-white">
       <Navbar />
@@ -263,7 +301,7 @@ export default function App() {
         aria-label="Contact on WhatsApp"
       >
         <span className="absolute right-full mr-4 top-1/2 -translate-y-1/2 bg-white text-brand-primary py-2 px-4 rounded-lg shadow-xl text-xs font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none tracking-widest uppercase">
-          Chat with us
+          Type your query
         </span>
         <svg 
           viewBox="0 0 24 24" 
@@ -426,23 +464,7 @@ export default function App() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            {[
-              {
-                title: "Laser Treatments",
-                desc: "Advanced precision lasers for pigment correction, permanent hair removal, and non-surgical skin resurfacing.",
-                img: IMAGES.laser
-              },
-              {
-                title: "Injectables & Fillers",
-                desc: "Artistic enhancement and volume restoration using premium, FDA-approved dermal fillers and neuromodulators.",
-                img: IMAGES.injectables
-              },
-              {
-                title: "Skin Rejuvenation",
-                desc: "Customized chemical peels, medical-grade facials, and hydration therapies to restore your skin's natural radiance.",
-                img: IMAGES.rejuvenation
-              }
-            ].map((t, i) => (
+            {TREATMENTS.map((t, i) => (
               <motion.div 
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
@@ -457,21 +479,101 @@ export default function App() {
                 <div className="p-12">
                   <h3 className="text-2xl font-serif text-brand-primary mb-5">{t.title}</h3>
                   <p className="text-slate-600 leading-relaxed mb-10 text-sm">{t.desc}</p>
-                  <a 
-                    href={CONTACT_INFO.whatsappUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    onClick={() => logAction('Service Inquiry Clicked', t.title)}
+                  <button 
+                    onClick={() => {
+                      setSelectedService(t);
+                      logAction('Explore Procedure Clicked', t.title);
+                    }}
                     className="inline-flex items-center text-[11px] font-bold tracking-[0.3em] text-brand-secondary uppercase hover:gap-4 transition-all"
                   >
                     EXPLORE PROCEDURE <ArrowRight className="w-4 h-4 ml-2" />
-                  </a>
+                  </button>
                 </div>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
+
+      {/* Service Detail Modal */}
+      <AnimatePresence>
+        {selectedService && (
+          <div className="fixed inset-0 z-[100] flex items-center justify-center px-6 py-12">
+            <motion.div 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setSelectedService(null)}
+              className="absolute inset-0 bg-brand-primary/80 backdrop-blur-md"
+            />
+            <motion.div 
+              initial={{ opacity: 0, y: 50, scale: 0.95 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: 50, scale: 0.95 }}
+              className="relative w-full max-w-5xl bg-white rounded-[2.5rem] overflow-hidden luxury-shadow max-h-[90vh] overflow-y-auto"
+            >
+              <button 
+                onClick={() => setSelectedService(null)}
+                className="absolute top-8 right-8 z-10 w-12 h-12 bg-brand-surface-dim rounded-full flex items-center justify-center text-brand-primary hover:bg-brand-primary hover:text-white transition-all"
+              >
+                <X className="w-6 h-6" />
+              </button>
+
+              <div className="grid grid-cols-1 lg:grid-cols-2">
+                <div className="h-[400px] lg:h-auto">
+                  <img src={selectedService.img} className="w-full h-full object-cover" alt={selectedService.title} />
+                </div>
+                <div className="p-10 md:p-16 space-y-10">
+                  <div className="space-y-4">
+                    <span className="text-[10px] font-bold tracking-[0.3em] text-brand-secondary uppercase">Clinical Journey</span>
+                    <h2 className="text-4xl md:text-5xl font-serif text-brand-primary tracking-tight">{selectedService.title}</h2>
+                    <div className="h-1 w-16 bg-brand-tertiary" />
+                  </div>
+
+                  <p className="text-lg text-slate-600 leading-relaxed italic border-l-4 border-brand-secondary/20 pl-6">
+                    "{selectedService.story}"
+                  </p>
+
+                  <div className="space-y-8">
+                    <h4 className="text-xs font-bold tracking-[0.2em] text-brand-primary uppercase">How it works</h4>
+                    <div className="space-y-8">
+                      {selectedService.process.map((p: any, idx: number) => (
+                        <div key={idx} className="flex gap-6 group">
+                          <div className="w-8 h-8 rounded-full border border-brand-tertiary flex items-center justify-center text-brand-secondary text-[10px] font-bold shrink-0">
+                            0{idx + 1}
+                          </div>
+                          <div className="space-y-1">
+                            <h5 className="font-bold text-brand-primary text-sm uppercase tracking-wider">{p.step}</h5>
+                            <p className="text-slate-500 text-sm leading-relaxed">{p.detail}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="pt-8 border-t border-slate-100 flex items-center justify-between">
+                    <button 
+                      onClick={() => setSelectedService(null)}
+                      className="text-[10px] font-bold tracking-widest text-slate-400 uppercase hover:text-brand-primary transition-colors"
+                    >
+                      Close Details
+                    </button>
+                    <a 
+                      href={CONTACT_INFO.whatsappUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      onClick={() => logAction('Inquiry from Modal', selectedService.title)}
+                      className="bg-brand-primary text-white px-8 py-4 rounded-full text-[10px] font-bold tracking-widest uppercase hover:scale-105 transition-all luxury-shadow"
+                    >
+                      Book Consultation
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
 
       {/* FAQ */}
       <FAQSection />
@@ -490,7 +592,7 @@ export default function App() {
               className="relative rounded-[2.5rem] overflow-hidden luxury-shadow h-[550px] bg-slate-200"
             >
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3798.2435423851086!2d83.3396943750035!3d17.82725208313886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a395b0000000001%3A0x0!2zMXN0IEZsb29yLCBLaHVzaGkganVuY3Rpb24sIDEwMCBGZWV0IFJkLCBNaWRoaWxhcHVyaSBWdWRhIENvbG9ueSwgTWFkaHVyYXdhZGEsIFZpc2FraGFwYXRuYW0sIEFuZGlvIFByYWRlc2ggNTMwMDQx!5e0!3m2!1sen!2sin!4v1714700000000!5m2!1sen!2sin" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3798.2435423851086!2d83.3396943750035!3d17.82725208313886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3959950ea95555%3A0xe543ea56250567!2sDr.%20Suhasini%2C%20MD%2C%20DDVL%20(GMC)%20-%20Best%20Skin%20Specialist%2C%20Madhurawada%2C%20Vizag!5e0!3m2!1sen!2sin!4v1714700000000!5m2!1sen!2sin" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 
