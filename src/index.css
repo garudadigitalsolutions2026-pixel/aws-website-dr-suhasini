@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Noto Serif", serif;
+  --font-sans: "Manrope", sans-serif;
+
+  --color-brand-primary: #040d1b;
+  --color-brand-secondary: #45664a;
+  --color-brand-tertiary: #cca830;
+  --color-brand-background: #f8f9fa;
+  --color-brand-surface: #ffffff;
+  --color-brand-surface-dim: #f3f4f5;
+
+  --radius-button: 0.5rem;
+  --radius-card: 1rem;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans bg-brand-background text-brand-primary antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+.luxury-shadow {
+  box-shadow: 0 24px 48px -12px rgba(4, 13, 27, 0.06);
+}
+
+.arch-mask {
+  clip-path: ellipse(100% 100% at 50% 100%);
+}
